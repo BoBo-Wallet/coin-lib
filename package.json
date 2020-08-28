@@ -1,12 +1,12 @@
 {
-  "name": "airgap-coin-lib",
-  "version": "0.9.3-beta.4",
-  "description": "The airgap-coin-lib is a protocol agnostic library to prepare, sign and broadcast cryptocurrency transactions.",
+  "name": "@bobo-wallet/coin-lib",
+  "version": "0.1.1",
+  "description": "The bobo-coin-lib is a protocol agnostic library to prepare, sign and broadcast cryptocurrency transactions.",
   "main": "dist/index.js",
   "unpkg": "dist/airgap-coin-lib.min.js",
   "types": "dist/index.d.ts",
   "keywords": [
-    "airgap",
+    "bobo",
     "blockchain",
     "crypto",
     "bitcoin",
@@ -19,10 +19,10 @@
     "kusama"
   ],
   "license": "MIT",
-  "homepage": "https://www.airgap.it",
+  "homepage": "https://www.hypermine.in/bobo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/airgap-it/airgap-coin-lib"
+    "url": "https://github.com/BoBo-Wallet/coin-lib"
   },
   "scripts": {
     "build": "node scripts/node-module-es-module-interop.js && tsc && node scripts/copy-files-after-build.js && node scripts/make-ts-declaration-files-backwards-compatible.js",
@@ -40,7 +40,7 @@
     "install-build-dependencies": "node scripts/install-build-deps.js && npm install",
     "browserify": "browserify ./dist/index.js -s airgapCoinLib > ./dist/airgap-coin-lib.min.js"
   },
-  "author": "Papers GmbH <contact@papers.ch> (https://papers.ch)",
+  "author": "Hypermine <connect@hypermine.in> (https://hypermine.in)",
   "dependencies": {
     "@harmony-js/core": "^0.1.50",
     "@polkadot/util": "2.0.1",

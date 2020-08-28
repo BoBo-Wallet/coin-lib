@@ -1,4 +1,9 @@
-# AirGap Coin Library
+# Coin Library
+
+Coin library is taken from AIrGap's coin'lib, We are trying to keep our updates as minimal as possible.
+
+Your can read more about AirGap lib bellow .
+
 
 [![npm](https://img.shields.io/npm/v/airgap-coin-lib.svg?colorB=brightgreen)](https://www.npmjs.com/package/airgap-coin-lib)
 [![documentation](https://img.shields.io/badge/documentation-online-brightgreen.svg)](https://airgap-it.github.io/airgap-coin-lib/)
@@ -86,8 +91,8 @@ Build dependencies get installed using `npm install`.
 ### Clone and Run
 
 ```
-$ git clone https://github.com/airgap-it/airgap-coin-lib.git
-$ cd airgap-coin-lib
+$ git clone https://github.com/BoBo-Wallet/coin-lib.git
+$ cd coin-lib
 $ npm install
 ```
 
