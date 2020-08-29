@@ -23,6 +23,6 @@ const serializer = new Serializer()
 serializer
   .serialize([json])
   .then((serialized) => {
-    console.log(`airgap-vault://?d=${serialized}`)
+    console.log(`bobo-vault://?d=${serialized}`)
   })
   .catch(console.error)

@@ -4,7 +4,7 @@ NOTE: The following documentation refers to version 1 of the serializer. Version
 
 ## Request to sign a transaction
 
-This can be used to request for example [Airgap Vault](https://github.com/airgap-it/airgap-vault) to sign a transation.
+This can be used to request for example [Airgap Vault](https://github.com/airgap-it/bobo-vault) to sign a transation.
 
 ```typescript
 import { EthereumProtocol, SyncProtocolUtils, EncodedType } from 'airgap-coin-lib'
