@@ -51,7 +51,7 @@ const serializedTx: SerializedSyncProtocolTransaction = toBuffer([
     transaction.transaction.data ? transaction.transaction.data : '0x' // data is optional, include empty if necessary
   ],
   transaction.publicKey, // publicKey
-  transaction.callback ? transaction.callback : 'airgap-wallet://?d=' // callback-scheme
+  transaction.callback ? transaction.callback : 'bobo-wallet://?d=' // callback-scheme
 ]) as SerializedSyncProtocolTransaction
 ```
 
@@ -117,7 +117,7 @@ To make sync scheme future proof for more diverse use cases, we have to add supp
 
 The UnsignedTransaction request supports passing a callback URL.
 
-By default, the callback URL is set to `airgap-wallet://?d=`, but it can be overwritten by setting the callback URL in the unsigned transaction request.
+By default, the callback URL is set to `bobo-wallet://?d=`, but it can be overwritten by setting the callback URL in the unsigned transaction request.
 
 Using the callback URL, the signer can redirect the user back to where his signed transaction can be handled. In AirGap, the signer will always redirect the signed transaction back to the wallet app, where the user can verify the data one last time before broadcasting. Another app might choose to redirect their users back to their app after signing, or directly to website.
 

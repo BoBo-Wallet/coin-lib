@@ -27,7 +27,7 @@ const syncString = await syncProtocolUtils.serialize({
     type: EncodedType.UNSIGNED_TRANSACTION,
     payload: {
         publicKey: publicKey,
-        callback: 'airgap-wallet://?d=',
+        callback: 'bobo-wallet://?d=',
         transaction: rawEthereumTx
     }
 })
@@ -46,7 +46,7 @@ const deserializedSync = await syncProtocol.deserialize(syncString)
 
 ## Request to broadcast a signed transaction
 
-This can be used to request for example [Airgap Wallet](https://github.com/airgap-it/airgap-wallet) to broadcast a signed transaction to the network.
+This can be used to request for example [Airgap Wallet](https://github.com/BoBo-Wallet/wallet) to broadcast a signed transaction to the network.
 
 ```typescript
 import { EthereumProtocol, SyncProtocolUtils, EncodedType } from 'airgap-coin-lib'

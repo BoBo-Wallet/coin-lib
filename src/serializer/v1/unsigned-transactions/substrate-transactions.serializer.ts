@@ -22,7 +22,7 @@ export class SubstrateUnsignedTransactionsSerializer extends UnsignedTransaction
 
     toSerialize[SyncProtocolUnsignedTransactionKeys.UNSIGNED_TRANSACTION] = [transaction.transaction.encoded]
     toSerialize[SyncProtocolUnsignedTransactionKeys.PUBLIC_KEY] = transaction.publicKey
-    toSerialize[SyncProtocolUnsignedTransactionKeys.CALLBACK] = transaction.callback ? transaction.callback : 'airgap-wallet://?d='
+    toSerialize[SyncProtocolUnsignedTransactionKeys.CALLBACK] = transaction.callback ? transaction.callback : 'bobo-wallet://?d='
 
     return toBuffer(toSerialize) as SerializedSyncProtocolTransaction
   }

@@ -14,7 +14,7 @@ const json = {
       chainId: 1,
       data: ''
     },
-    callback: 'airgap-wallet://?d='
+    callback: 'bobo-wallet://?d='
   }
 }
 

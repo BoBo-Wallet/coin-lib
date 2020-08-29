@@ -21,7 +21,7 @@ export class TezosUnsignedTransactionSerializer extends UnsignedTransactionSeria
     const toSerialize = [
       [unsignedTx.transaction.binaryTransaction],
       unsignedTx.publicKey, // publicKey
-      unsignedTx.callback ? unsignedTx.callback : 'airgap-wallet://?d=' // callback-scheme
+      unsignedTx.callback ? unsignedTx.callback : 'bobo-wallet://?d=' // callback-scheme
     ]
     const serializedTx: SerializedSyncProtocolTransaction = toBuffer(toSerialize) as SerializedSyncProtocolTransaction
 

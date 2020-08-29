@@ -55,7 +55,7 @@ abstract class TestProtocolSpec {
         type: IACMessageType.TransactionSignRequest,
         payload: {
           publicKey: this.wallet.publicKey,
-          callback: 'airgap-wallet://?d=',
+          callback: 'bobo-wallet://?d=',
           transaction: tx.unsignedTx
         }
       }

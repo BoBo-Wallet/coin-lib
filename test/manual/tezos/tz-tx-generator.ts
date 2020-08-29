@@ -45,7 +45,7 @@ const promise = async () => {
     type: EncodedType.UNSIGNED_TRANSACTION,
     payload: {
       publicKey,
-      callback: 'airgap-wallet://?d=',
+      callback: 'bobo-wallet://?d=',
       transaction: rawTezosTx
     }
   })
